@@ -1,0 +1,12 @@
+app/
+
+# Only include what is neccessary for the application to work in Cloud Foundry
+# No need for the 32 bit drivers and such....
+vendored/teradata/client/etc
+vendored/teradata/client/ODBC_32
+vendored/teradata/client/ODBC_64
+vendored/teradata/client/15.10/lib
+vendored/teradata/client/15.10/bin
+vendored/teradata/client/15.10/odbc_32
+vendored/teradata/client/15.10/odbc_64/samples
+vendored/teradata/client/15.10/teragss

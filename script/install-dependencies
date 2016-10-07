@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -e
+set -x
+
+
+# Vendor python dependencies
+pip download -d vendor -r requirements.txt
