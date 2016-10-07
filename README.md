@@ -18,18 +18,17 @@ mv tdodbc1510__linux_indep.15.10.01.03-1.tar.gz /app/install/
 cd /app/install/
 tar xf tdodbc1510__linux_indep.15.10.01.03-1.tar.gz
 tar xf TeraGSS_linux_x64__linux_indep.15.10.02.08-1.tar.gz
-tar xvf tdicu1510__linux_indep.15.10.01.02-1.tar.gz
-tar xvf tdodbc1510__linux_indep.15.10.01.03-1.tar.gz
+tar xf tdicu1510__linux_indep.15.10.01.02-1.tar.gz
+tar xf tdodbc1510__linux_indep.15.10.01.03-1.tar.gz
 
 #Install GSS
 cd TeraGSS
 rpm --prefix=/app/vendored -i TeraGSS_linux_x64-15.10.02.08-1.noarch.rpm
 
-cd ..
 
 #Install TDICU using the setup wrapper script
-cd tdicu1510
-
+cd ../tdicu1510
+./setup_wrapper.sh
 ------------------------------------
 Install mode chosen is - Interactive
 ------------------------------------
@@ -45,10 +44,10 @@ Updating / installing...
 Running /app/vendored/teradata/client/15.10/bin/setactiverel.sh ...
 Updating /etc/csh.login and /etc/profile...
 
-cd ..
+
 
 #Install the TDODBC Drivers using the defaults
-cd tdodbc1510
+cd ../tdodbc1510
 ./setup_wrapper.sh
 
 # Bundle up the installed dependencies into a tar file
