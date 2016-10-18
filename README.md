@@ -8,7 +8,7 @@ vendor/
 ```
 ### Teradata ODBC drivers
 
-This project requires that the Teradata drivers be downloaded from [The Teradata Developer Portal](http://downloads.teradata.com/download/connectivity/odbc-driver/linux). Once you have the download you will need to install the driver using a CentOS using the following instructions.
+This project requires that the Teradata drivers be downloaded from [The Teradata Developer Portal](http://downloads.teradata.com/download/connectivity/odbc-driver/linux). Once you have the download you will need to install the driver using a CentOS server or inside of a docker container using the following instructions.
 
 ```
 mkdir -p /app/install
